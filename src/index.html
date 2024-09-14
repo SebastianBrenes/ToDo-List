@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-    <html lang="en" dir="ltr">
+    <html lang="es">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Taskies</title>
-        <link rel="stylesheet" href="">
+        <title>TASKIES - Aplicación de Notas</title>
     </head>
-            
     <body>
-        <section id="menu-bar">
-            <header><h1>Taskies</h1></header>
-            <div id="NoteSpaces">
-                <h4>My Notes Spaces</h4>
-                <ul>
-                    <li><a href="#">Workspace</a></li>
-                    <li><a href="#">Notes</a></li>
-                    <li><a href="#">To Do</a></li>
-                </ul>
-            </div>
-        </section>
-        <section id="content"></section>
+        <div id="sidebar">
+            <div id="logo">TASKIES</div>
+            <div id="user-name">Usuario Ejemplo</div>
+            <div style="margin-bottom: 10px; color: hsl(var(--muted-foreground));">My Notes Spaces</div>
+            <ul id="folders">
+                <li class="folder">
+                    <span>Carpeta 1</span>
+                    <span class="folder-menu">⋮</span>
+                    <div class="folder-options">
+                        <div class="rename-folder">Renombrar</div>
+                        <div class="delete-folder">Eliminar</div>
+                    </div>
+                </li>
+                <li class="folder">
+                    <span>Carpeta 2</span>
+                    <span class="folder-menu">⋮</span>
+                    <div class="folder-options">
+                        <div class="rename-folder">Renombrar</div>
+                        <div class="delete-folder">Eliminar</div>
+                    </div>
+                </li>
+                <li class="folder">
+                    <span>Carpeta 3</span>
+                    <span class="folder-menu">⋮</span>
+                    <div class="folder-options">
+                        <div class="rename-folder">Renombrar</div>
+                        <div class="delete-folder">Eliminar</div>
+                    </div>
+                </li>
+            </ul>
+            <div id="add-folder">+ Nueva Carpeta</div>
+        </div>
+        <div id="main">
+            <div id="workspace">Workspace</div>
+            <div id="add-note">+</div>
+            <div id="notes-container"></div>
+        </div>
     </body>
-           
 </html>
